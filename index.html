@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/still.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Design Portfolio</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/img/circle-logo.png" alt="Logo">
+      <a class="btn" href="#">Free Consultation</a>
+    </header>
+    <div class="header-content">
+      <h1>Design solutions made easy</h1>
+      <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+    </div>
+    <div class="talented-content">
+      <div class="graphic">
+        <img class="graphic-image" src="assets/img/graphic-design.png" alt="">
+        <h4>Graphic Design</h4>
+      </div>
+      <div class="ui">
+        <img class="ui-image" src="assets/img/ui-ux.png" alt="">
+        <h4>UI/UX</h4>
+      </div>
+      <div class="apps">
+        <img class="apps-image" src="assets/img/apps .png" alt="">
+        <h4>Apps</h4>
+      </div>
+      <div class="illustration">
+        <img  class="illustration-image" src="assets/img/illustration.png" alt="">
+        <h4>Illustrations</h4>
+      </div>
+      <div class="photography">
+        <img class="photo-image" src="assets/img/photography.png" alt="">
+        <h4>Photography</h4>
+      </div>
+      <div class="motion">
+        <img class="motion-image" src="assets/img/motion.png" alt="">
+        <h4>Motion Graphics</h4>
+      </div>
+    </div>
+    <div class="avatar-content">
+      <div class="avatar-photo-inner">
+        <img src="assets/img/avatar.png" alt="">
+      </div>
+      <div class="avatar-text-inner">
+        <h2>I’m Amy, and I’d love to work on your next project</h2>
+        <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+        <a class="pink" href="#">Free Consultation</a>
+      </div>
+    </div>
+<!-- Swiper Slider -->
+    <div class="swiper">
+      <div class="swiper-header">
+        <h3>My Work</h3>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/Bitmap (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/Bitmap (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/Bitmap (3).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/Bitmap Copy 2.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/Bitmap Copy.jpg" alt=""></div>
+      </div>
+      <img class="slide-button" src="assets/img/slide-button.png" alt="">
+    </div>
+    <div class="card-content">
+      <div class="card-inner">
+        <h2> Book a call with me</h2>
+        <p class="white-p">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        <a class="pink" href="#">Free Consultation</a>
+      </div>
+  
+    </div>
+    <header>
+      <img src="assets/img/circle-logo.png" alt="Logo">
+      <a class="btn" href="#">Free Consultation</a>
+    </header>
+  </div>
+<!-- js part -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper', {
+  loop: true, 
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+document.getElementById('prevBtn').addEventListener('click', function () {
+  swiper.slidePrev();
+});
+</script>
+</body>
+</html>
